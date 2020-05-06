@@ -53,22 +53,11 @@ def dashboard(request):
 
 
 
-
-
-
-
-
 #have an issue with the logout view
 @login_required()
 def logout(request):
     logout(request)
     return HttpResponseRedirect()
-
-
-
-
-
-
 
 
 
