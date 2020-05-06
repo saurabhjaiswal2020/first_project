@@ -1,0 +1,11 @@
+{% extends 'first_app/base.html' %}
+
+{% block body_block %}
+    <h1>Contact Page</h1>
+    <form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <input type="submit" name="Send Message">
+
+    </form>
+{% endblock %}
